@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------------------------------- */
+/* RESET
+/* ------------------------------------------------------------------------- */
+* {box-sizing:border-box}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+address, em, img, strong, i, dl, dt, dd, ul, li, 
+fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, figure, button, input, select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    word-break: break-all;
+}
+:lang(ko) {word-break: keep-all;}
+ul, li {list-style: none;} ul,li a{display: block;}
+a {text-decoration: none; color: inherit;}
+em, address {font-style: normal;}
+h1, h2, h3, h4, h5, h6, strong {font-weight: normal;}
+article, aside, figcaption, figure, footer, header, nav, section, main {display: block;}
+table {border-collapse: collapse; border-spacing:0;}
+input, button, select {
+    border: none;
+    border-radius:0; 
+    background-color: transparent;
+}
+select {appearance:none; -webkit-appearance:none;  -moz-appearance:none;}
+button, select {cursor: pointer;}
+input:focus, select:focus, option:focus, textarea:focus, button:focus {outline: none;}
+
+img, svg, video, canvas, audio, iframe {display: block;}
+img, video {max-width: 100%; height: auto;}
+
+body {
+    font: 400 16px/1 'Pretendard GOV', 'Noto Sans KR', 'Malgun Gothic' ,'돋움', dotum, AppleGothic, sans-serif; 
+    /* letter-spacing: -1px; */
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* FONT
+/* ------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Light.subset.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Light.subset.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Regular.subset.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Regular.subset.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Medium.subset.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Medium.subset.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-SemiBold.subset.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-SemiBold.subset.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Bold.subset.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard GOV';
+    src:url('../fonts/PretendardGOV-Bold.subset.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+/* COMMON
+/* ------------------------------------------------------------------------- */
+:root{
+  --introBtn_Defalt:#0059ff;
+  --introBtn_Hover:#004edf;
+}
+
+
+
+.soundOnly {width: 0; height: 0; position: absolute; left: -9999px; top: 0; overflow: hidden;}
+.flexible{display: flex; align-items: center; justify-content: center;}
+.flexEnd {display: flex; align-items: center; justify-content: space-between;}
+.relative {position: relative;}
+
