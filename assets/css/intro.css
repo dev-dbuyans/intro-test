@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
+:root{
+  --introBtn_Defalt:#0059ff;
+  --introBtn_Hover:#004edf;
+}
+
 /* ------------------------------------------------------------------------- */
 /* LAYOUT
 /* ------------------------------------------------------------------------- */
+
 .col{ display: flex; flex-direction: column;}
 .flexi{display: flex; align-items: center;}
 
@@ -303,7 +309,7 @@ section#intro .con .effect .riverBtn:hover{
     overflow: auto;
     min-height: 100vh; height: 100%;
   }
-  #intro_wrap .inner{ padding: 24px 24px 100px 24px }
+  #intro_wrap .inner{ padding: 16px 16px 100px 16px }
   main#intro {
     height: 100%;
     align-items: flex-start;
@@ -322,9 +328,9 @@ section#intro .con .effect .riverBtn:hover{
   section#intro .con.on{
     height: 100%; min-height: 20rem;
   }
-  section#intro .con .con_txt h3.river { font-size: 1.6rem; padding-left: 3vw; }
-  section#intro .con.off .con_txt h3.river{ font-size: 1.6rem; }
-  section#intro .con .effect.on {padding: 0 3vw;}
+  section#intro .con .con_txt h3.river { font-size: 1.6rem; padding-left: 20px; }
+  section#intro .con.off .con_txt h3.river{ font-size: 1.6rem; padding: 0 20px;}
+  section#intro .con .effect.on { padding: 0 20px;}
   section#intro .con .effect .river_info { font-size: 0.9rem; line-height: 160%; }
   section#intro .con .effect .riverBtn { 
     font-size: 1rem; 
