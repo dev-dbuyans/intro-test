@@ -325,9 +325,8 @@ section#intro .con .effect .riverBtn:hover{
     width: 100%; 
     min-height: 7.76rem; height: 100%;
   }
-  section#intro .con.on{
-    height: 100%; min-height: 20rem;
-  }
+  section#intro .con.on{ height: 100%; min-height: 20rem; }
+  section#intro .con .con_txt { bottom: 20px;}
   section#intro .con .con_txt h3.river { font-size: 1.6rem; padding-left: 20px; }
   section#intro .con.off .con_txt h3.river{ font-size: 1.6rem; padding: 0 20px;}
   section#intro .con.off .con_txt h3.river::after {
