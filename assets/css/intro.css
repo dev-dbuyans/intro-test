@@ -324,6 +324,7 @@ section#intro .con .effect .riverBtn:hover{
   section#intro .con{
     width: 100%; 
     min-height: 7.76rem; height: 100%;
+    transition: min-height 0.3s ease;
   }
   section#intro .con.on{ height: 100%; min-height: 20rem; }
   section#intro .con .con_txt { bottom: 20px;}
