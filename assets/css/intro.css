@@ -76,8 +76,8 @@ section#intro .con{
   width: calc((100% - 48px) / 4); height: 42.23rem;
   position: relative;
   background: url(../img/intro_HG.png) no-repeat center / cover;
-  border-radius: 19px;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 19px;
   flex: 1 1 0%;
   transition: flex 0.5s ease-in-out , height 0.3s linear; 
 }
@@ -108,7 +108,7 @@ section#intro .con .con_txt h3.river::after{
   display: inline-block; content: '';
   width: 44px; height: 44px;
   background: url(../img/ico_intro_errow.svg) no-repeat center / contain;
-  position: absolute; top: -1px;
+  position: absolute; top: -2px;
 }
 section#intro .con.on .con_txt h3.river::after{ display: none; }
 
@@ -330,6 +330,11 @@ section#intro .con .effect .riverBtn:hover{
   }
   section#intro .con .con_txt h3.river { font-size: 1.6rem; padding-left: 20px; }
   section#intro .con.off .con_txt h3.river{ font-size: 1.6rem; padding: 0 20px;}
+  section#intro .con.off .con_txt h3.river::after {
+    width: 32px;
+    height: 32px;
+    right: -8px;
+  }
   section#intro .con .effect.on { padding: 0 20px;}
   section#intro .con .effect .river_info { font-size: 0.9rem; line-height: 160%; }
   section#intro .con .effect .riverBtn { 

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 📱 터치 디바이스인지 판별
+  // 터치 디바이스인지 판별
   function isTouchDevice() {
     return ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
   }
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 🖱️ PC용 배경 전환 유지
+  // PC용 배경 전환 유지
   $("section#intro .con").on("mouseover", function () {
     if (!isTouchDevice()) {
       setBackground($(this));
