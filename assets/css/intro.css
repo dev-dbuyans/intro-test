@@ -364,6 +364,7 @@ section#intro .con .effect .riverBtn:hover{
 
 }
 
+/* ===== 430px ===== */
 @media screen and (max-width:430px){
   section#intro .con .effect .riverBtn { width: 100%; }
 }
