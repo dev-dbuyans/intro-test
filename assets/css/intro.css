@@ -264,7 +264,7 @@ section#intro .con .effect .riverBtn:hover{
   section#intro .con .con_txt h3.river { font-size: 3rem;}
   section#intro .con.off .con_txt h3.river::after{
     width: 2.8rem; height: 2.8rem; 
-    right: -1.3rem;
+    right: -1.5rem;
   }
   section#intro .con .effect.on { width: 31vw; }
 
@@ -359,6 +359,7 @@ section#intro .con .effect .riverBtn:hover{
   .copyright {
     width: 100%; text-align: center;
     left: 50%; transform: translateX(-50%);
+    font-size: 1.2rem; 
   }
 
 }
@@ -371,7 +372,7 @@ section#intro .con .effect .riverBtn:hover{
 /* ===== 가로 769px ===== */
 @media screen and (max-height : 769px){
   #intro_wrap{overflow: auto; height: 100%;}
-  #intro_wrap .inner{height: 100%; padding: 2.4rem 2.4rem 8rem 2.4rem; }
+  #intro_wrap .inner{height: 100%; padding: 2.4rem 2.4rem 10rem 2.4rem; }
 
   section#intro .con { height: 37.4rem; }
 }
