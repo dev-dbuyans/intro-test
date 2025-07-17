@@ -308,8 +308,8 @@ section#intro .con .effect .riverBtn:hover{
   section#intro .con.off .con_txt h3.river { font-size: 2.4rem ;}
 
   section#intro .con .effect.on { width: 100%; }
-  section#intro .con .effect .river_info { font-size: 1.7rem; }
-  section#intro .con .effect .riverBtn { padding: 16px 40px; font-size: 1.1rem; border-radius: 10px;}
+  section#intro .con .effect .river_info { font-size: 1.6rem; line-height: 1.6; }
+  section#intro .con .effect .riverBtn { padding: 16px 40px; font-size: 1.7rem; border-radius: 10px;}
 }
 
 
@@ -350,7 +350,6 @@ section#intro .con .effect .riverBtn:hover{
     right: -1.4rem; top: -0.3rem;
   }
   section#intro .con .effect.on { padding: 0 2rem;}
-  section#intro .con .effect .river_info { font-size: 1.6rem; line-height: 1.6; }
   section#intro .con .effect .riverBtn { 
     font-size: 1.7rem; 
     border-radius: 1.2rem;
@@ -365,16 +364,14 @@ section#intro .con .effect .riverBtn:hover{
 }
 
 @media screen and (max-width:430px){
-  section#intro .con .effect .riverBtn {
-    width: 100%;
-  }
+  section#intro .con .effect .riverBtn { width: 100%; }
 }
 
 
 /* ===== 가로 769px ===== */
 @media screen and (max-height : 769px){
   #intro_wrap{overflow: auto; height: 100%;}
-  #intro_wrap .inner{height: 100%; padding: 24px 24px 80px 24px; }
+  #intro_wrap .inner{height: 100%; padding: 2.4rem 2.4rem 8rem 2.4rem; }
 
-  section#intro .con { height: 27.6em; }
+  section#intro .con { height: 37.4rem; }
 }
