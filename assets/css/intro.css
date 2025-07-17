@@ -320,7 +320,7 @@ section#intro .con .effect .riverBtn:hover{
   main#intro .group { gap: 1.2rem; }
 
   /* section */
-  section#intro { flex-direction: column; }
+  section#intro { flex-direction: column; gap: 12px; }
   section#intro .con{
     width: 100%; 
     min-height: 7.76rem; height: 100%;
