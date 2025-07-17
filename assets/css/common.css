@@ -34,12 +34,13 @@ img, svg, video, canvas, audio, iframe {display: block;}
 img, video {max-width: 100%; height: auto;}
 
 body {
-    font: 400 16px/1 'Pretendard GOV', 'Noto Sans KR', 'Malgun Gothic' ,'돋움', dotum, AppleGothic, sans-serif; 
-    /* letter-spacing: -1px; */
-    background-color: #fff;
-    overflow-x: hidden;
+  font: 400 16px/1 'Pretendard GOV', 'Noto Sans KR', 'Malgun Gothic' ,'돋움', dotum, AppleGothic, sans-serif; 
+  /* letter-spacing: -1px; */
+  background-color: #fff;
+  overflow-x: hidden;
 }
-
+html {font-size: 62.5%;}
+/* 1rem = 10px */
 
 
 /* ------------------------------------------------------------------------- */

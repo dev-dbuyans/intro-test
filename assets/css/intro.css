@@ -8,7 +8,7 @@
 /* ------------------------------------------------------------------------- */
 /* LAYOUT
 /* ------------------------------------------------------------------------- */
-
+html {font-size: 62.5%;}
 .col{ display: flex; flex-direction: column;}
 .flexi{display: flex; align-items: center;}
 
@@ -25,9 +25,9 @@
   transition: background-image 0.3s linear;
 }
 #intro_wrap .inner{
-  width: 100%; height: 100%;
+  width: 100%; height: 100%; 
   display: flex; align-items: center; justify-content: center;
-  padding: 0 100px;
+  padding: 0 5vw;
 }
 
 
@@ -36,12 +36,11 @@
 /* ------------------------------------------------------------------------- */
 main#intro{
   width: 100%; 
-  gap: 50px; 
   transition: padding 0.3s ease, flex 0.3s ease;
 }
 main#intro .group{
   width: 100%; overflow: hidden;
-  display: flex; gap: 3rem;
+  display: flex; gap: 5rem;
 }
 
 
@@ -49,15 +48,14 @@ main#intro .group{
 /*  HEADER
 /* ------------------------------------------------------------------------- */
 header { 
-  width: 23rem; 
-  gap: 23.8rem;
-  transition: width 0.3s ease ,  gap 0.3s linear;
+  width: 40rem; 
   display: flex; flex-direction: column;
-  gap: 3.52rem;  
+  gap: 6rem;
+  transition: width 0.3s ease ,  gap 0.3s linear;
 }
 header .h_title{
-  font-size: 2.5em;
-  line-height: 140%; letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  line-height: 1.4;  letter-spacing: -0.044rem;
   color: #ffffff;
   transition: font-size 0.3s ease;
 }
@@ -68,16 +66,18 @@ header .h_title span{ font-weight: 700; }
 /*  SECTION
 /* ------------------------------------------------------------------------- */
 section#intro{
-  width: calc(100% - 23rem);
-  gap: 16px;
+  width: calc(100% - 40rem);
+  gap: 1.6rem;
   transition: flex 0.4s ease-in-out; 
 }
 section#intro .con{
-  width: calc((100% - 48px) / 4); height: 42.23rem;
+  width: calc(100% / 4);
+  height: 71.8rem;
+  /* height: calc(100vh - 36rem); */
   position: relative;
   background: url(../img/intro_HG.png) no-repeat center / cover;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12);
-  border-radius: 19px;
+  box-shadow: 0 0.7rem 1.4rem rgba(0, 0, 0, 0.12);
+  border-radius: 1.9rem;
   flex: 1 1 0%;
   transition: flex 0.5s ease-in-out , height 0.3s linear; 
 }
@@ -92,30 +92,31 @@ section#intro .con.on{ flex: 3 1 0%;}
 section#intro .con.off{ flex: 1 1 0%;}
 
 section#intro .con .con_txt{ 
-  gap: 28px; 
-  position: absolute; bottom: 49px;
+  /* width: 100%; */
+  gap: 2.8rem; 
+  position: absolute; bottom: 4.9rem;
   color: #ffffff;
   transition: padding 0.2s linear , bottom 0.2s linear;
 }
 section#intro .con.off .con_txt{ padding: 0;}
 
 section#intro .con .con_txt h3.river{ 
-  font-size: 2.35em; font-weight: 700; 
+  font-size: 4rem; font-weight: 700; 
   position: relative; 
-  padding-left: 2vw;
+  padding-left: 4rem;
 }
 section#intro .con .con_txt h3.river::after{
   display: inline-block; content: '';
-  width: 44px; height: 44px;
+  width: 4.4rem; height: 4.4rem;
   background: url(../img/ico_intro_errow.svg) no-repeat center / contain;
-  position: absolute; top: -2px;
+  position: absolute; top: -3px;
 }
 section#intro .con.on .con_txt h3.river::after{ display: none; }
 
 /* 강 설명 */
 section#intro .con .effect { 
   width: 100%; 
-  padding: 0 2vw;
+  padding: 0 4rem;
   position: relative;
   transition: width 0.5s linear;
   display: none; 
@@ -123,20 +124,20 @@ section#intro .con .effect {
 section#intro .con .effect.on { 
   display: block; 
   width: 32vw;
-  min-width: 232px;
+  min-width: 23.2rem;
 }
 section#intro .con .effect .river_info{
-  margin-bottom: 28px;
-  font-size: 1.05rem; line-height: 170%; 
+  margin-bottom: 2.8rem;
+  font-size: 1.8rem; line-height: 1.7; 
 }
 
 /* 바로가기 버튼 */
 section#intro .con .effect .riverBtn{
   display: block;
-  width: 11.7rem; padding: 20px 65px; 
-  font-size: 1.17rem; font-weight: 600; 
-  letter-spacing: -0.2px; text-align: center;
-  border-radius: 12px; background-color: var(--introBtn_Defalt); color: #ffffff;
+  width: 20rem; padding: 2rem 6.5rem; 
+  font-size: 1.8rem; font-weight: 600; 
+  letter-spacing: -0.02rem; text-align: center;
+  border-radius: 1.2rem; background-color: var(--introBtn_Defalt); color: #ffffff;
   transition: width 0.3 ease;
 }
 section#intro .con .effect .riverBtn:hover{
@@ -149,10 +150,10 @@ section#intro .con .effect .riverBtn:hover{
 /* ------------------------------------------------------------------------- */
 .copyright{
   /* margin: 34px 0; */
-  font-size: 0.7rem; font-weight: 300; line-height: 150%;
+  font-size: 1.3rem; font-weight: 300; line-height: 1.5;
   color: #ffffff;
   position: absolute; 
-  left: 100px; bottom: 15%;
+  left: 10rem; bottom: 21.5rem;
   transition: left 0.3s linear;
 }
 
@@ -162,11 +163,16 @@ section#intro .con .effect .riverBtn:hover{
 /* ------------------------------------------------------------------------- */
 /* MediaQuery
 /* ------------------------------------------------------------------------- */
+@media screen and ( max-width : 1870px ){
+  header .h_title{  font-size: 4rem; }
+}
+
 @media screen and ( max-width : 1760px ){
   /* section */
   section#intro .con.off .con_txt h3.river{ 
-    font-size: 2.23em; 
-    padding: 0; padding-left: 1.5em;
+    font-size: 3.8rem; 
+    padding: 0; 
+    padding-left: 1.5vw;
   }
   section#intro .con .effect.on { 
     width: 30vw;
@@ -177,22 +183,22 @@ section#intro .con .effect .riverBtn:hover{
 /* ===== 1600px ===== */
 @media screen and ( max-width : 1600px ){
   /* section */
-  section#intro .con .con_txt { bottom: 39px;}
+  section#intro .con .con_txt { bottom: 3.9rem;}
   section#intro .con.off .con_txt h3.river{ 
     font-size: 1.88em; padding: 0 0.5em;
   }
   section#intro .con.off .con_txt h3.river::after{
-    width: 34px; height: 34px; 
-    position: absolute; right: -14px;
+    width: 3.4rem; height: 3.4rem; 
+    position: absolute; right: -18px;
   }
-  section#intro .con .effect.on {  width: 26vw; }
+  section#intro .con .effect.on {  width: 30vw; }
 }
 
 
 /* ===== 1500px ===== */
 @media screen and ( max-width : 1500px ){
   /* header */
-  header { width: 26vw; }
+  header { width: 26vw;}
   header .h_title { font-size: 2.35em;}
 
   /* section */
@@ -204,112 +210,117 @@ section#intro .con .effect .riverBtn:hover{
 }
 
 
-/* ===== 1400px ===== */
-@media screen and ( max-width : 1400px ){
+/* 수정 */
+/* ===== 1440px ===== */
+@media screen and ( max-width : 1440px ){
+
+  #intro_wrap .inner {padding: 0 2.4rem;}
   /* header */
   header { gap: 2.9rem ;}
-  header .h_title { font-size: 2.11em;}
+  header .h_title { font-size: 3.4rem;}
   
   /* section */
-  section#intro .con { height: 39.3em; }
-  section#intro .con .con_txt { bottom: 29px;}
-  section#intro .con .con_txt h3.river{ font-size: 2em; }
+  section#intro .con { height: 66.8rem; }
+  section#intro .con .con_txt { bottom: 2.9rem;}
+  section#intro .con .con_txt h3.river{ font-size: 3.4rem; }
   section#intro .con .con_txt h3.river::after{
-    width: 32px; height: 32px; 
-    position: absolute; right: -28px;
+    width: 3.2rem; height: 3.2rem; 
+    position: absolute; right: -2.8rem;
   }
-  section#intro .con.off .con_txt h3.river{font-size: 1.64rem;}
-  section#intro .con.off .con_txt h3.river::after{
-    width: 32px; height: 32px; 
-  }
+  section#intro .con.off .con_txt h3.river{ font-size: 2.8rem;}
+  section#intro .con.off .con_txt h3.river::after{ width: 3.2rem; height: 3.2rem;}
+  
+  section#intro .con .effect.on { width: 33vw;}
   section#intro .con .effect .riverBtn{
-    width: 10rem;
-    padding: 20px 40px; 
+    width: 18rem;
+    padding: 2rem 4rem; 
   } 
-
+  
   /* copyright */
-  .copyright{ bottom: 20%; }
+  .copyright {left: 2.4rem; bottom: 20%;}
 }
 
 
 /* ===== 1300px ===== */
 @media screen and ( max-width : 1300px ){
   /* section */
-  section#intro .con .effect.on { width: 25vw; }
 
-  section#intro .con.off .con_txt h3.river{font-size: 1.41rem;}
+  section#intro .con.off .con_txt h3.river{font-size: 2.4rem;}
   section#intro .con.off .con_txt h3.river::after{
-    width: 30px; height: 30px; 
-    right: -13px;
+    width: 3rem; height: 3rem; 
+    right: -1.7rem;
   }
 }
 
 
 /* ===== 1200px ===== */
 @media screen and ( max-width : 1200px ){
-  #intro_wrap .inner{ padding: 0 24px;}
 
   /* header */
-  header { gap: 1.76rem; }
-  header .h_title { font-size: 1.71em; }
+  header { gap: 2rem; width: 24vw; }
+  header .h_title { font-size: 2.8rem; }
 
   /* section */
-  section#intro .con .con_txt h3.river { font-size: 1.8em;}
+  section#intro .con .con_txt h3.river { font-size: 3rem;}
   section#intro .con.off .con_txt h3.river::after{
-    width: 26px; height: 26px; 
-    right: -11px;
+    width: 2.8rem; height: 2.8rem; 
+    right: -1.3rem;
   }
   section#intro .con .effect.on { width: 31vw; }
 
   /* copyright */
-  .copyright{ left: 24px; bottom: 20%; }
+  .copyright{ left: 2.4rem; bottom: 20%; }
 }
 
 
 /* ===== 1024px ===== */
 @media screen and ( max-width : 1024px ){
-  #intro_wrap .inner{ padding: 24px; height: 100%;}
 
   /* main */
   main#intro { top: 41%; height: 100%; }
-  main#intro .group{ display: flex; flex-direction: column; }
+  main#intro .group{ 
+    display: flex; flex-direction: column; align-self: flex-start; 
+    padding-top: 2.4rem;
+  }
 
   /* header */
   header{ width: 100%; gap: 2.2rem;}
-  header h1.h_logo { width: 7.5rem;}
+  header h1.h_logo { width: 12.8rem;}
   header .h_title br { display: block;}
 
   /* section */
   section#intro{ width: 100%; height: 100%;}
   section#intro .con { border-radius: 14px; height: 29em; }
-  section#intro .con .effect.on { width: 100%; }
+  section#intro .con .con_txt { bottom: 2.4rem; }
+  section#intro .con .con_txt h3.river {padding-left: 2.4rem;}
+  section#intro .con .effect.on { width: 100%; padding: 0 2.4rem;}
 
   /* copyright */
-  .copyright { position: absolute; bottom: 20px; }
+  .copyright { position: absolute; bottom: 2rem; }
 }
 
 
 /* ===== 960px ===== */
 @media screen and (max-width : 960px){
   /* section */
-  section#intro .con{ height: 29em; }
-  section#intro .con .con_txt { bottom :15px;}
-  section#intro .con.off .con_txt h3.river { font-size: 1.3rem ;}
+  section#intro .con{ height: 50rem; }
+  section#intro .con .con_txt h3.river{ font-size: 2.4rem;}
+  section#intro .con.off .con_txt h3.river { font-size: 2.4rem ;}
 
   section#intro .con .effect.on { width: 100%; }
-  section#intro .con .effect .river_info { font-size: 1rem; }
+  section#intro .con .effect .river_info { font-size: 1.7rem; }
   section#intro .con .effect .riverBtn { padding: 16px 40px; font-size: 1.1rem; border-radius: 10px;}
 }
 
 
 /* ===== 600px ===== */
-@media screen and (max-width : 600px){
+@media screen and (max-width : 767px){
   #wrap { overflow: scroll;}
   #intro_wrap{
     overflow: auto;
     min-height: 100vh; height: 100%;
   }
-  #intro_wrap .inner{ padding: 16px 16px 100px 16px }
+  #intro_wrap .inner{ padding: 1.6rem 1.6rem 10rem 1.6rem }
   main#intro {
     height: 100%;
     align-items: flex-start;
@@ -317,29 +328,32 @@ section#intro .con .effect .riverBtn:hover{
 
   /* header */
   header { gap: 1.2rem; }
-  main#intro .group { gap: 1.2rem; }
+  main#intro .group { gap: 1.2rem; padding-top: 0; }
 
   /* section */
-  section#intro { flex-direction: column; gap: 12px; }
+  section#intro { flex-direction: column; gap: 1.2rem; }
   section#intro .con{
     width: 100%; 
-    min-height: 7.76rem; height: 100%;
+    min-height: 13.2rem; height: 100%;
     transition: min-height 0.3s ease;
   }
-  section#intro .con.on{ height: 100%; min-height: 20rem; }
-  section#intro .con .con_txt { bottom: 20px;}
-  section#intro .con .con_txt h3.river { font-size: 1.6rem; padding-left: 20px; }
-  section#intro .con.off .con_txt h3.river{ font-size: 1.6rem; padding: 0 20px;}
-  section#intro .con.off .con_txt h3.river::after {
-    width: 32px;
-    height: 32px;
-    right: -8px;
+  section#intro .con.on{ height: 100%; min-height: 34rem; }
+  section#intro .con .con_txt { bottom: 2rem;}
+  section#intro .con .con_txt h3.river { font-size: 2.8rem; padding-left: 2rem; }
+  section#intro .con.off .con_txt h3.river{ font-size: 2.8rem; padding: 0 2rem;}
+  section#intro .con .con_txt h3.river::after {
+    width: 3.2rem; height: 3.2rem;
+    right: -3.4rem; top: -0.3rem;
   }
-  section#intro .con .effect.on { padding: 0 20px;}
-  section#intro .con .effect .river_info { font-size: 0.9rem; line-height: 160%; }
+  section#intro .con.off .con_txt h3.river::after {
+    width: 3.2rem; height: 3.2rem;
+    right: -1.4rem; top: -0.3rem;
+  }
+  section#intro .con .effect.on { padding: 0 2rem;}
+  section#intro .con .effect .river_info { font-size: 1.6rem; line-height: 1.6; }
   section#intro .con .effect .riverBtn { 
-    font-size: 1rem; 
-    border-radius: 8px;
+    font-size: 1.7rem; 
+    border-radius: 1.2rem;
   }
 
   /* copyright */
@@ -348,6 +362,12 @@ section#intro .con .effect .riverBtn:hover{
     left: 50%; transform: translateX(-50%);
   }
 
+}
+
+@media screen and (max-width:430px){
+  section#intro .con .effect .riverBtn {
+    width: 100%;
+  }
 }
 
 
