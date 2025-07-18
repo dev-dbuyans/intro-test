@@ -309,7 +309,7 @@ section#intro .con .effect .riverBtn:hover{
 
   section#intro .con .effect.on { width: 100%; }
   section#intro .con .effect .river_info { font-size: 1.6rem; line-height: 1.6; }
-  section#intro .con .effect .riverBtn { padding: 16px 40px; font-size: 1.7rem; border-radius: 10px;}
+  section#intro .con .effect .riverBtn { padding: 1.75rem 4rem; font-size: 1.7rem; border-radius: 10px;}
 }
 
 
