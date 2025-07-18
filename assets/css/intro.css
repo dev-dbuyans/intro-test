@@ -94,7 +94,7 @@ section#intro .con.off{ flex: 1 1 0%;}
 section#intro .con .con_txt{ 
   /* width: 100%; */
   gap: 2.8rem; 
-  position: absolute; bottom: 4.9rem;
+  position: absolute; bottom: 4rem;
   color: #ffffff;
   transition: padding 0.2s linear , bottom 0.2s linear;
 }
@@ -221,7 +221,7 @@ section#intro .con .effect .riverBtn:hover{
   
   /* section */
   section#intro .con { height: 66.8rem; }
-  section#intro .con .con_txt { bottom: 2.9rem;}
+  /* section#intro .con .con_txt { bottom: 2.9rem;} */
   section#intro .con .con_txt h3.river{ font-size: 3.4rem; }
   section#intro .con .con_txt h3.river::after{
     width: 3.2rem; height: 3.2rem; 
@@ -365,7 +365,7 @@ section#intro .con .effect .riverBtn:hover{
 }
 
 /* ===== 430px ===== */
-@media screen and (max-width:430px){
+@media screen and (max-width:480px){
   section#intro .con .effect .riverBtn { width: 100%; }
 }
 
