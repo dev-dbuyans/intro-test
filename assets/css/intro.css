@@ -290,7 +290,7 @@ section#intro .con .effect .riverBtn:hover{
 
   /* section */
   section#intro{ width: 100%; height: 100%;}
-  section#intro .con { border-radius: 14px; height: 29em; }
+  section#intro .con { border-radius: 14px; height: 66.8rem; }
   section#intro .con .con_txt { bottom: 2.4rem; }
   section#intro .con .con_txt h3.river {padding-left: 2.4rem;}
   section#intro .con .effect.on { width: 100%; padding: 0 2.4rem;}
@@ -372,7 +372,7 @@ section#intro .con .effect .riverBtn:hover{
 
 /* ===== 가로 769px ===== */
 @media screen and (max-height : 769px){
-  #intro_wrap{overflow: auto; height: 100%;}
+  #intro_wrap{overflow: auto; height: 100%; min-height: 100vh;}
   #intro_wrap .inner{height: 100%; padding: 2.4rem 2.4rem 10rem 2.4rem; }
 
   section#intro .con { height: 37.4rem; }
